@@ -11,9 +11,7 @@
 
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
   <!-- Top Header -->
@@ -71,10 +69,8 @@
   <!-- About Section -->
   <section id="about" class="about-section">
     <div class="about-content">
-
       <div class="about-text">
         <h2> Renew Sustain | RS</h2>
-
         <p>Renewing electronic devices through refurbishment, reuse, or recycling
           Sustaining environmentally responsible e-waste management practices,
           Promoting a circular economy that reduces waste and supports sustainable consumption.</p>
@@ -122,25 +118,20 @@
     <script>
       const slides = document.querySelectorAll('.carousel img');
       let currentSlide = 0;
-
       function showSlide(index) {
         slides.forEach((slide, i) => {
           slide.classList.toggle('active', i === index);
         });
       }
-
       function nextSlide() {
         currentSlide = (currentSlide + 1) % slides.length;
         showSlide(currentSlide);
       }
-
       // Show the first slide immediately
       showSlide(currentSlide);
-
       // Auto change every 3 seconds
       setInterval(nextSlide, 3000);
     </script>
-
   </section>
 
   <!-- Services Section -->
@@ -155,8 +146,6 @@
       <button class="tab-button active" data-category="services">🌍 Our Services</button>
       <button class="tab-button" data-category="solutions">♻️ Our Solutions</button>
     </div>
-
-
 
     <div class="services-grid" data-category="residential">
       <div class="service-card">
@@ -195,9 +184,6 @@
           <li>We help you meet EPR, CPCB, and OEM compliance standards.</li>
         </ul>
       </div>
-
-
-
     </div>
     <div class="scroll-container" data-category="commercial">
       <!-- Who We Serve -->
@@ -226,14 +212,11 @@
             centers.</li>
         </ol>
       </div>
-
-
     </div>
     <script>
       const tabButtons = document.querySelectorAll('.tab-button');
       const servicesGrid = document.querySelector('.services-grid');
       const scrollContainer = document.querySelector('.scroll-container');
-
       function showCategory(category) {
         if (category === 'services') {
           // Show "Our Services" content
@@ -245,10 +228,8 @@
           scrollContainer.style.display = 'none';
         }
       }
-
       // Default view: Our Services
       showCategory('services');
-
       tabButtons.forEach(button => {
         button.addEventListener('click', () => {
           tabButtons.forEach(btn => btn.classList.remove('active'));
@@ -257,13 +238,8 @@
         });
       });
     </script>
-
-
-
-
   </section>
-
-
+  
   <!-- Statistics Section -->
   <section class="stats-section">
     <div class="stats-grid">
@@ -548,14 +524,8 @@
           sustainable practices.
         </div>
       </div>
-
-
-
     </div>
   </section>
-
-
-
   <script>
     document.querySelectorAll(".faq-question").forEach((btn) => {
       btn.addEventListener("click", () => {

@@ -1,14 +1,4 @@
-:root {
-  --green-dark: #0e5329;
-  --green-main: #1a7f37;
-  --green-light: #e6f4ea;
-  --accent: #36b37e;
-  --text-dark: #1f2933;
-  --text-light: #6b7280;
-  --bg-light: #f8fafc;
-  --radius: 16px;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
+
 
 * {
   margin: 0;
@@ -303,4 +293,5 @@ h2 {
     font-size: 2.4rem;
   }
 }
+
 
